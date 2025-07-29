@@ -7,8 +7,16 @@ import ticTacToe from '../assets/tic-tac-toe.png'
 import stonePaperScissor from '../assets/stone-paper-scissor.png'
 import demoShop from '../assets/Demoshop-app.png'
 import musicWeb from '../assets/nextStart.png'
+import aiCareerCoach from '../assets/ai-career-agent.png'
 
 const projects = [
+  {
+    title: "AI Career Coach Agent",
+    description: "AI agent built with Next.js, Gemini API, and Inngest to guide users through personalized career advice and planning.",
+    link: "https://github.com/codepriyanshu21/AI-Career-Coach-Agent",
+    image: aiCareerCoach, 
+    tags: ["Next.js", "Gemini", "Inngest", "React", "Node", "Tailwind"]
+  },
   {
     title: "Job Portal",
     description: "MERN stack project with authentication and job listings.",
@@ -34,7 +42,7 @@ const projects = [
     title: "Basic-Music-Website",
     description: "A basic and responsive website built with Next.js, showcasing modern routing and performance.",
     link: "https://github.com/codepriyanshu21/Basic-Music-Website",
-    image: musicWeb, 
+    image: musicWeb,
     tags: ["Next.js", "React", "Tailwind"]
   },
   {
@@ -48,7 +56,7 @@ const projects = [
     title: "Tic Tac Toe",
     description: "Classic Tic Tac Toe game using HTML, CSS, and JavaScript.",
     link: "https://github.com/codepriyanshu21/Tic-Tac-Toe-Game",
-    image:ticTacToe,
+    image: ticTacToe,
     tags: ["HTML5", "CSS3", "JavaScript"]
   },
   {
@@ -58,13 +66,13 @@ const projects = [
     image: stonePaperScissor,
     tags: ["HTML5", "CSS3", "JavaScript"]
   },
-  
+
 ];
 
 export default function Projects() {
   return (
     <section id="projects" className="py-16 px-4 sm:px-8 bg-gray-900">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -90,8 +98,8 @@ export default function Projects() {
               className="group relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-blue-500 transition-all duration-300 shadow-lg"
             >
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -112,8 +120,8 @@ export default function Projects() {
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300"
                     >
                       {tag}

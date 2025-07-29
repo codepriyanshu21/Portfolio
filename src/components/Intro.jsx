@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import image from "../assets/image.png"; 
+import image from "../assets/image.png";
 import resume from '../assets/Priyanshu_Resume.pdf';
 
 const phrases = [
@@ -41,7 +41,7 @@ export default function Intro() {
         {/* For mobile: text content comes first */}
         <div className="md:hidden flex flex-col items-center w-full">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -51,8 +51,8 @@ export default function Intro() {
               <h1 className="text-4xl font-bold mb-4">
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Priyanshu</span>
               </h1>
-              
-              <motion.div 
+
+              <motion.div
                 key={index}
                 className="text-2xl font-semibold text-gray-300 h-8 mb-4"
               >
@@ -76,22 +76,23 @@ export default function Intro() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-full flex justify-center mb-8"
           >
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur-lg opacity-75 animate-pulse"></div>
+            <div className="relative w-56 h-56">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 blur-lg opacity-75 animate-pulse z-0" />
               <img
                 src={image}
                 alt="Profile"
-                className="relative w-56 h-56 rounded-2xl object-cover border-4 border-gray-800 shadow-xl z-10"
+                className="relative w-full h-full rounded-2xl object-cover object-top border-4 border-gray-800 shadow-xl z-10"
               />
             </div>
           </motion.div>
 
+
           {/* Buttons */}
           <div className="w-full">
             <p className="text-lg text-gray-400 mb-6 text-center">
-            Dedicated to crafting intuitive and high-performance web applications using modern frontend and backend technologies. Proficient in building responsive interfaces as well as designing robust server-side architectures. Continuously enhancing my problem-solving skills through hands-on experience with data structures and algorithms.
+              Dedicated to crafting intuitive and high-performance web applications using modern frontend and backend technologies. Proficient in building responsive interfaces as well as designing robust server-side architectures. Continuously enhancing my problem-solving skills through hands-on experience with data structures and algorithms.
             </p>
-            
+
             <div className="flex flex-col items-center gap-4">
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -117,10 +118,10 @@ export default function Intro() {
           </div>
         </div>
 
-        
+
         <div className="hidden md:flex md:flex-row items-center justify-between w-full">
           {/* Left Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -130,8 +131,8 @@ export default function Intro() {
               <h1 className="text-5xl lg:text-6xl font-bold mb-4">
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Priyanshu</span>
               </h1>
-              
-              <motion.div 
+
+              <motion.div
                 key={index}
                 className="text-3xl font-semibold text-gray-300 h-12"
               >
@@ -148,7 +149,7 @@ export default function Intro() {
             </div>
 
             <p className="text-lg text-gray-400 mb-8 max-w-xl">
-            Dedicated to crafting intuitive and high-performance web applications using modern frontend and backend technologies. Proficient in building responsive interfaces as well as designing robust server-side architectures. Continuously enhancing my problem-solving skills through hands-on experience with data structures and algorithms.
+              Dedicated to crafting intuitive and high-performance web applications using modern frontend and backend technologies. Proficient in building responsive interfaces as well as designing robust server-side architectures. Continuously enhancing my problem-solving skills through hands-on experience with data structures and algorithms.
             </p>
 
             <div className="flex flex-row gap-4 justify-start">
@@ -176,21 +177,23 @@ export default function Intro() {
           </motion.div>
 
           {/* Right Image */}
+          {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-1 flex justify-center"
           >
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur-lg opacity-75 animate-pulse"></div>
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 blur-lg opacity-75 animate-pulse" />
               <img
                 src={image}
                 alt="Profile"
-                className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl object-cover border-4 border-gray-800 shadow-xl z-10"
+                className="relative w-full h-full rounded-2xl object-cover object-top border-4 border-gray-800 shadow-xl"
               />
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
