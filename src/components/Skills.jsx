@@ -20,7 +20,7 @@ import {
   SiC,
   SiPython,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+import { TbSql } from "react-icons/tb";
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
@@ -40,6 +40,7 @@ const skills = [
   { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
   { name: "GitHub", icon: <FaGithub className="text-white" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+  { name: "SQL", icon: <TbSql className="text-blue-400" /> },
 ];
 
 export default function Skills() {
