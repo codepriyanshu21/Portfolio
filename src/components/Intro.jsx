@@ -6,9 +6,9 @@ import image from "../assets/image.png";
 import resume from '../assets/Priyanshu_Resume.pdf';
 
 const phrases = [
-  "Frontend Developer",
+  "Full Stack Developer",
   "DSA Enthusiast (C++)",
-  "Currently working on Backend",
+  "Currently working on Advanced Backend",
 ];
 
 export default function Intro() {
