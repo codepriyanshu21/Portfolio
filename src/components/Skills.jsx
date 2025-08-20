@@ -18,9 +18,9 @@ import {
   SiPostman,
   SiCplusplus,
   SiC,
-  SiPython,
+  SiSqlite,
 } from "react-icons/si";
-import { TbSql } from "react-icons/tb";
+
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
@@ -34,13 +34,12 @@ const skills = [
   { name: "Express", icon: <SiExpress className="text-gray-300" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
   { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-  { name: "Python", icon: <SiPython className="text-blue-400" /> },
   { name: "C", icon: <SiC className="text-blue-600" /> },
   { name: "C++", icon: <SiCplusplus className="text-blue-700" /> },
   { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
   { name: "GitHub", icon: <FaGithub className="text-white" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
-  { name: "SQL", icon: <TbSql className="text-blue-400" /> },
+  { name: "SQL", icon: <SiSqlite className="text-blue-400" /> },
 ];
 
 export default function Skills() {
